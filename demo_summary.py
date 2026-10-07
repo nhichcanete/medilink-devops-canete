@@ -8,7 +8,13 @@ from medilink_contract import build_summary
 
 
 def main() -> None:
-    patient = {"patient_id": "P1001", "name": "Ana Reyes", "clinic": "Quezon Clinic"}
+    # Add the maintenance status to the patient data
+    patient = {
+        "patient_id": "P1001", 
+        "name": "Ana Reyes", 
+        "clinic": "Quezon Clinic",
+        "status": "MAINTENANCE" 
+    }
     appointments = [
         {"date": "2026-10-05", "service": "General Consultation"},
         {"date": "2026-10-19", "service": "Follow-up"},
